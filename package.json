@@ -1,0 +1,65 @@
+{
+  "name": "osm_to_geo",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.10.15",
+    "@reduxjs/toolkit": "^1.9.0",
+    "@types/jest": "^27.5.2",
+    "@types/leaflet": "^1.9.0",
+    "@types/node": "^16.18.3",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "leaflet": "^1.9.3",
+    "osmtogeojson": "^3.0.0-beta.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.0.5",
+    "typescript": "^4.9.3"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.7.2",
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.28.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-webpack-plugin": "^3.2.0",
+    "file-loader": "^6.2.0",
+    "html-minimizer-webpack-plugin": "^4.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^29.3.1",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "style-loader": "^3.3.1",
+    "terser-webpack-plugin": "^5.3.6",
+    "ts-jest": "^29.0.3",
+    "ts-loader": "^9.4.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack",
+    "lint": "eslint --ext .ts,.tsx ./src",
+    "lint:fix": "eslint --fix --ext .ts,.tsx ./src",
+    "test": "jest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
